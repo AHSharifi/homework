@@ -48,7 +48,7 @@ a:hover {
   border: 3px solid #c073ff;
   /* border-radius: 50%; */
   margin: 20px 0;
-    animation: shape 10s linear infinite;
+  animation: shape 10s linear infinite;
 }
 
 @keyframes shape {
@@ -293,14 +293,14 @@ a {
 ========================================================================================================================
  */
 
- .left__side .projects {
-    margin-top: 20px;
- }
+.left__side .projects {
+  margin-top: 20px;
+}
 
- .left__side h2 {
+.left__side h2 {
   color: #d5d5d5;
   margin-bottom: 10px;
- }
+}
 
 .left__side .projects__box {
   width: 100%;
@@ -313,13 +313,30 @@ a {
 .left__side .projects a {
   width: 30%;
   background-color: #222222;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
+  margin-right: 10px;
+  border: 1px solid #aeaeae76;
+  transform: scale(100%);
+  transition: all 0.5s ease;
+  position: relative;
+  height: 170px;
+}
+
+.left__side .projects a:hover {
+  transform: scale(105%);
+  box-shadow: 0 0 10px #a442ff;
+  transition: all 0.5s ease;
 }
 
 .left__side .projects a h3 {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 25px;
+}
+
+.left__side .projects a .dis {
+  color: #dddddda1;
+  margin-bottom: 15px;
 }
 
 .left__side .projects .lang__box {
@@ -367,4 +384,24 @@ a {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.left__side .projects a .author {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-top: 10px;
+  position: absolute;
+  bottom: 10px;
+}
+
+.left__side .projects a img {
+  width: 25px;
+  border-radius: 50%;
+}
+
+.left__side .projects a .author__name {
+  margin-left: 5px;
+  color: #adadadbd;
 }
