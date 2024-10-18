@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://github.com/AHSharifi/login-panel",
       dis: "A beautiful login panel to show your website professional...",
       author: "ahsharifi",
-      authorImage: "https://avatars.githubusercontent.com/u/143296865?v=4",
+      authorImage: "../assets/image/profile.jpg",
       langs: [
         { name: "HTML", width: "13.5%" },
         { name: "Css", width: "15.1%" },
@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
       link: "https://github.com/AHSharifi/project1",
       dis: "A simple and beautiful HTML & Css website theme...",
       author: "ahsharifi",
-      authorImage: "https://avatars.githubusercontent.com/u/143296865?v=4",
+      authorImage: "../assets/image/profile.jpg",
       langs: [
         { name: "HTML", width: "67.9%" },
         { name: "Css", width: "32.1%" },
