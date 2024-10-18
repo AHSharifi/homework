@@ -11,8 +11,6 @@ document.addEventListener("DOMContentLoaded", () => {
     { name: "Photoshop", skill: "70%" },
     { name: "Premiere", skill: "59%" },
     { name: "Figma", skill: "52%" },
-    { name: "Windows Terminal", skill: "48%" },
-    { name: "Linux", skill: "62%" },
     { name: "MySQL", skill: "88%" },
     { name: "Node.js", skill: "74%" },
     { name: "Bootstrap", skill: "83%" },
