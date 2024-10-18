@@ -20,7 +20,6 @@ body {
 
 table {
   margin-top: 30px;
-  background-color: #222222;
 }
 
 table, tr, th, td{
@@ -31,14 +30,23 @@ table, tr, th, td{
   color: #e5e5e5;
 }
 
+table tr {
+  background-color: #393939;
+}
+
 table th {
   background-color: #000000;
 }
 
 table td[data-status= "0"] {
-  color: red;
+  color: rgb(255, 56, 56);
 }
-
 table td[data-status= "1"] {
+  color: rgb(255, 187, 62);
+}
+table td[data-status= "2"] {
   color: rgb(0, 206, 0);
+}
+table td[data-status= "3"] {
+  color: rgb(154, 154, 154);
 }
