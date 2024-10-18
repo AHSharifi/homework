@@ -2,11 +2,21 @@ document.addEventListener("DOMContentLoaded", () => {
   // ----------- Skills List Array -----------
   const skills = [
     { name: "HTML & Css", skill: "97%" },
-    { name: "Js", skill: "91%" },
+    { name: "JavaScript", skill: "91%" },
     { name: "PHP", skill: "63%" },
     { name: "React", skill: "87%" },
     { name: "React Native", skill: "56%" },
     { name: "Laravel", skill: "63%" },
+    { name: "Wordpress", skill: "76%" },
+    { name: "Photoshop", skill: "70%" },
+    { name: "Premiere", skill: "59%" },
+    { name: "Figma", skill: "52%" },
+    { name: "Windows Terminal", skill: "48%" },
+    { name: "Linux", skill: "62%" },
+    { name: "MySQL", skill: "88%" },
+    { name: "Node.js", skill: "74%" },
+    { name: "Bootstrap", skill: "83%" },
+    { name: "English", skill: "76%" },
   ];
 
   // ----------- Projects List Array -----------
@@ -14,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Login Panel",
       link: "https://github.com/AHSharifi/login-panel",
-      dis: "A beautiful login panel to show your website professional...",
+      dis: "A beautiful login panel to show your website professional.",
       author: "ahsharifi",
       authorImage: "../assets/image/profile.jpg",
       langs: [
@@ -26,12 +36,25 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       name: "Project1",
       link: "https://github.com/AHSharifi/project1",
-      dis: "A simple and beautiful HTML & Css website theme...",
+      dis: "A simple and beautiful HTML & Css website theme.",
       author: "ahsharifi",
       authorImage: "../assets/image/profile.jpg",
       langs: [
         { name: "HTML", width: "67.9%" },
         { name: "Css", width: "32.1%" },
+      ],
+    },
+    {
+      name: "Laravel",
+      link: "https://github.com/AHSharifi/laravel",
+      dis: "A simple and Laravel site with backend and SQL.",
+      author: "ahsharifi",
+      authorImage: "../assets/image/profile.jpg",
+      langs: [
+        { name: "PHP", width: "62.7%" },
+        { name: "Blade", width: "35.4%" },
+        { name: "Css", width: "1.3%" },
+        { name: "JavaScript", width: "0.6%" },
       ],
     },
   ];
@@ -48,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     const text = `
-            <a href="${project.link}" title="${project.name}">
+            <a href="${project.link}" title="${project.name}" target="_blank">
               <h3>${project.name}</h3>
               <p class="dis">${project.dis}</p>
               <div>

@@ -1,3 +1,21 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--hover);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border);
+  cursor: pointer;
+}
+
 * {
   margin: 0;
 }
@@ -196,6 +214,7 @@ a {
   background-color: #2d2d2d;
   border-radius: 15px;
   padding: 15px;
+  overflow-y: scroll;
 }
 
 /*
@@ -262,7 +281,7 @@ a {
 }
 
 .left__side .skills div .box {
-  height: 10px;
+  height: 5px;
   width: 80%;
   background-color: #222222;
   border-radius: 25px;
@@ -277,14 +296,17 @@ a {
   justify-content: flex-end;
   align-items: center;
   width: 0;
+  position: relative;
   transition: width 2s ease;
 }
 
 .left__side .skills div .box .fill p {
-  font-size: 9px;
+  font-size: 15px;
   margin-right: 3px;
   color: #ddddddbc;
   font-weight: bold;
+  position: absolute;
+  bottom: 10px;
 }
 
 /*
@@ -311,16 +333,15 @@ a {
 }
 
 .left__side .projects a {
-  width: 30%;
+  width: 29%;
   background-color: #222222;
   padding: 15px;
   border-radius: 10px;
-  margin-right: 10px;
   border: 1px solid #aeaeae76;
   transform: scale(100%);
   transition: all 0.5s ease;
   position: relative;
-  height: 170px;
+  height: 180px;
 }
 
 .left__side .projects a:hover {
@@ -337,6 +358,10 @@ a {
 .left__side .projects a .dis {
   color: #dddddda1;
   margin-bottom: 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 95%;
 }
 
 .left__side .projects .lang__box {
@@ -360,6 +385,12 @@ a {
 }
 .left__side .projects .JavaScript {
   background-color: #f0ff22;
+}
+.left__side .projects .PHP {
+  background-color: #354a6b;
+}
+.left__side .projects .Blade {
+  background-color: #61ff22;
 }
 
 .left__side .projects .lang__name {
@@ -393,7 +424,7 @@ a {
   align-items: flex-end;
   margin-top: 10px;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
 }
 
 .left__side .projects a img {
