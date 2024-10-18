@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Vazirmatn-Black.woff2);
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: vazir;
+  background-color: rgb(20, 26, 38);
+}
+
+table {
+  margin-top: 30px;
+  background-color: #222222;
+}
+
+table, tr, th, td{
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  padding: 10px 20px;
+  text-align: center;
+  color: #e5e5e5;
+}
+
+table th {
+  background-color: #000000;
+}
+
+table td[data-status= "0"] {
+  color: red;
+}
+
+table td[data-status= "1"] {
+  color: rgb(0, 206, 0);
+}
