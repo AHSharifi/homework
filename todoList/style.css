@@ -1,0 +1,141 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: transparent;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  width: 80%;
+  height: 95%;
+  margin: 20px 0;
+  border-radius: 20px;
+  padding: 30px 10px;
+}
+
+.add__box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  border-bottom: 1px dashed #1e293b;
+  padding-bottom: 30px;
+}
+
+.add__box form {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.add__box form input {
+  border-radius: 25px;
+  height: 50px;
+  padding: 5px 20px;
+}
+
+.add__box form button {
+  background-color: #1e293b;
+  color: #e5e5e5;
+  border-radius: 50%;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.add__box form button:hover {
+  background-color: #30415d;
+  transition: all 0.3s ease;
+}
+
+.list__box {
+  width: 100%;
+  height: 85%;
+  margin-top: 20px;
+}
+
+.list__box ul {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.list__box ul li {
+  background-color: #1e293b;
+  width: 50%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #e5e5e5;
+  padding: 15px 25px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  transition: all .3s ease; 
+}
+
+.list__box ul li:hover {
+  background-color: #2b3a53;
+  transition: all .3s ease;
+}
+
+.list__box ul li p {
+  margin: 0;
+  width: 400px;
+}
+
+.list__box ul li p:nth-child(1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+.list__box ul li p:nth-child(2) {
+  width: 80px;
+}
+
+.list__box ul li svg {
+  margin-right: auto;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.list__box ul li svg:hover {
+  color: rgb(255, 63, 63);
+  transition: all .3s ease;
+}
