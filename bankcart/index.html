@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank Cart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cart-container">
+    <div class="cart">
+      <div class="front">
+        <h1><span>5894</span> <span>6311</span> <span>1827</span> <span>2228</span></h1>
+        <h2>امیرحسین شریفی</h2>
+        <h3>123</h3>
+        <p>تاریخ انقضا: 1403/04</p>
+      </div>
+      <div class="back">
+        <div class="line"></div>
+        <p>امضای صاحب کارت</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cartContainer = document.querySelector('.cart-container');
+
+    cartContainer.addEventListener('click', () => {
+      cartContainer.classList.toggle('flipped');
+    });
+  </script>
+</body>
+</html>
