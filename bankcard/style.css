@@ -23,6 +23,7 @@ body {
   width: 505px;
   height: 319px;
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .cart {

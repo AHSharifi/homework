@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Mona Sans';
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card .front {
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(#0c8e71, #1e9f83);
+  border-radius: 15px;
+  position: relative;
+}
+
+.card .front img {
+  width: 180%;
+  position: absolute;
+  left: -40%;
+  top: -20%;
+}
+
+.card .front h1 {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+  color: #fff;
+  font-size: 55px;
+}
+
+.card .front p {
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  font-size: 20px;
+}
+
+.card .back {
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(#0c8e71, #1e9f83);
+  border-radius: 15px;
+  position: relative;
+}
+
+.card .back .line {
+  width: 70px;
+  height: 100%;
+  background-color: #096c57;
+  border-radius: 15px 0 0 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.card .back .box {
+  position: absolute;
+  left: 70px;
+  top: 0;
+}
+
+.card .back .box h3{
+  font-size: 25px;
+  position: absolute;
+  left: 20px;
+  top: 50px;
+}
+
+.card .back .box h2 {
+  position: absolute;
+  top: 170px;
+  left: 20px;
+}
+
+.card .back .box .exp {
+  position: absolute;
+  left: 20px;
+  top: 360px;
+}
+.card .back .box .exp p {
+  font-size: 13px;
+}
+.card .back .box .cvv2 {
+  position: absolute;
+  top: 360px;
+  left: 120px;
+}
+.card .back .box .cvv2 p {
+  font-size: 13px;
+}
